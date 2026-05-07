@@ -1,4 +1,4 @@
-kname: Docker CI/CD
+name: Docker CI/CD
 
 on:
   push:
@@ -28,3 +28,4 @@ jobs:
             sudo docker rm docker-node-app || true
             sudo docker build -t my-node-app .
             sudo docker run -d -p 3000:3000 --name docker-node-app my-node-app
+
